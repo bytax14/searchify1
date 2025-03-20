@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchify</title>
+    <style>
+        body {
+            background-color: #0A0F1E;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+        }
+        h1 {
+            color: #00D4FF;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 3em;
+            text-shadow: 0 0 5px #00D4FF, 0 0 10px #00D4FF, 0 0 20px #00D4FF;
+        }
+        .section {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #141B2D;
+        }
+        .section h2 {
+            color: #FF6D6D;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #FF6D6D, 0 0 10px #FF6D6D;
+        }
+        .buttons-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+        .button {
+            background-color: #1E2A47;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+        .button:hover {
+            background-color: #2C3A61;
+            transform: scale(1.05);
+            box-shadow: 0 0 8px rgba(0,0,0,0.7);
+        }
+        .google { color: #4285F4; }
+        .brave { color: #FF6D00; }
+        .bing { color: #008373; }
+        .firefox { color: #FF7139; }
+        .edge { color: #0A65F0; }
+        .yahoo { color: #6001D2; }
+        .duckduckgo { color: #DE5833; }
+        .chatgpt { color: #00A67E; }
+        .bard { color: #FFD700; }
+        .gemini { color: #00AEEF; }
+        .perplexity { color: #FF007F; }
+        .character { color: #FF6347; }
+        .youchat { color: #1D9BF0; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/86pBenM.jpeg" alt="">
+        <h1>Searchify</h1>
+    </header>
+
+    <div class="section">
+        <h2>Search Engines</h2>
+        <div class="buttons-container">
+            <div class="button google" onclick="openUrl('https://www.google.com')">Google</div>
+            <div class="button brave" onclick="openUrl('https://www.brave.com')">Brave</div>
+            <div class="button bing" onclick="openUrl('https://www.bing.com')">Bing</div>
+            <div class="button firefox" onclick="openUrl('https://www.mozilla.org/firefox/')">Firefox</div>
+            <div class="button edge" onclick="openUrl('https://www.microsoft.com/edge')">Edge</div>
+            <div class="button yahoo" onclick="openUrl('https://search.yahoo.com')">Yahoo</div>
+            <div class="button duckduckgo" onclick="openUrl('https://duckduckgo.com')">DuckDuckGo</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>AI Chatbots</h2>
+        <div class="buttons-container">
+            <div class="button chatgpt" onclick="openUrl('https://chat.openai.com')">ChatGPT</div>
+            <div class="button bard" onclick="openUrl('https://bard.google.com')">Google Bard</div>
+            <div class="button gemini" onclick="openUrl('https://gemini.com')">Gemini AI</div>
+            <div class="button perplexity" onclick="openUrl('https://www.perplexity.ai')">Perplexity AI</div>
+            <div class="button character" onclick="openUrl('https://character.ai')">Character AI</div>
+            <div class="button youchat" onclick="openUrl('https://you.com/chat')">YouChat</div>
+        </div>
+    </div>
+
+    <script>
+        function openUrl(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+</html>
